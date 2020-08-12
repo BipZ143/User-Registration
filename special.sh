@@ -1,5 +1,4 @@
 #!/bin/bash -x
-
 read -p "Enter 8 character for Password : " password
 passwordPattern="[A-Z0-9#@$?]{8,}"
 
