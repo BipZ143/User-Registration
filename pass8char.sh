@@ -1,8 +1,8 @@
 #!/bin/bash -x
 echo "enter the password"
 read password
-len="${#password}"
-if [[ $len -ge 8 ]]
+len="^[a-zA-Z0-9]{8,}$"
+if [[ $password =~ $len ]]
 then
 	echo "valid"
 else
